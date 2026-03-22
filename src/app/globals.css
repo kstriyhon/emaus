@@ -1,26 +1,41 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #faf9f8;
+  --foreground: #1a1c1c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #3b231c; /* Solemn terracotta instead of black */
+    --foreground: #faf9f8;
   }
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tonal Horizon Utilities from Stitch Strategy */
+.soft-horizon {
+  transition: background-color 0.3s ease;
+}
+
+.glass-header {
+  background-color: rgba(250, 249, 248, 0.85); /* surface color * 0.85 */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #91472b 0%, #af5f41 100%);
+}
+
+.ambient-shadow {
+  box-shadow: 0 20px 40px rgba(26, 28, 28, 0.05);
 }
