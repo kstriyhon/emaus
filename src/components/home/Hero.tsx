@@ -11,15 +11,19 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white flex flex-col items-center">
-        <span className="font-sans font-bold tracking-[0.2em] uppercase text-sm mb-6 opacity-90">
-          Comunidad Parroquial
-        </span>
-        <h1 className="font-serif text-5xl md:text-7xl font-bold leading-tight mb-8">
-          Jesucristo ha resucitado,<br />
-          <span className="text-secondary-container italic font-medium">
-            en verdad resucitó.
-          </span>
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white flex flex-col items-center pt-24">
+        {/* Emaús representative image */}
+        <div className="mb-0 relative">
+          <div className="absolute inset-0 bg-primary/30 rounded-3xl blur-xl animate-pulse" />
+          <img 
+            src="/cruz-emaus.png" 
+            alt="Cruz de Emaús - Jesucristo ha resucitado, en verdad resucitó" 
+            className="w-full max-w-lg object-cover rounded-3xl border-4 border-white/80 shadow-[0_0_40px_rgba(255,255,255,0.3)] relative z-10"
+          />
+        </div>
+        
+        <h1 className="sr-only">
+          Jesucristo ha resucitado, en verdad resucitó.
         </h1>
         <p className="font-sans text-lg md:text-xl max-w-2xl mx-auto mb-12 opacity-95 leading-relaxed">
           Un fin de semana diseñado para renovar tu espíritu, encontrarte con el amor de Dios y transformar tu vida a través del testimonio y la hermandad.
