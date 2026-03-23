@@ -73,13 +73,13 @@ export default function InscripcionPage() {
 
   return (
     <div className="min-h-screen pt-32 pb-24 px-6 bg-surface-low">
-      <div className="max-w-3xl mx-auto">
+      <div className="w-full max-w-lg mx-auto">
         <Link href="/" className="inline-flex items-center gap-2 text-text-variant hover:text-primary transition-colors font-sans font-medium mb-8">
           <ArrowLeft size={20} />
           Volver
         </Link>
         
-        <div className="bg-surface-lowest p-8 md:p-14 rounded-[2rem] ambient-shadow">
+        <div className="bg-surface-lowest p-8 md:p-10 rounded-[2rem] ambient-shadow">
           <div className="mb-10">
             <span className="font-sans font-bold tracking-widest text-sm uppercase text-secondary mb-2 block">
               Tu Encuentro Te Espera
@@ -98,7 +98,7 @@ export default function InscripcionPage() {
                 Información Personal
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-6">
                 <div className="space-y-2">
                   <label className="font-sans font-bold text-sm text-text-variant uppercase tracking-wider block">
                     Nombre Completo
@@ -108,7 +108,7 @@ export default function InscripcionPage() {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
-                    className="w-full bg-surface-low border border-outline-variant/30 rounded-xl px-4 py-3 font-sans text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-surface-low border border-surface-container/50 rounded-2xl px-5 py-4 font-sans text-text-primary placeholder:text-text-variant/50 hover:bg-surface-lowest focus:bg-background focus:border-primary focus:shadow-[0_8px_30px_rgba(145,71,43,0.12)] focus:-translate-y-1 focus:outline-none transition-all duration-300"
                     placeholder="Escribe tu nombre"
                   />
                   {errors.fullName && <p className="text-red-700 text-sm">{errors.fullName}</p>}
@@ -123,13 +123,13 @@ export default function InscripcionPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full bg-surface-low border border-outline-variant/30 rounded-xl px-4 py-3 font-sans text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-surface-low border border-surface-container/50 rounded-2xl px-5 py-4 font-sans text-text-primary placeholder:text-text-variant/50 hover:bg-surface-lowest focus:bg-background focus:border-primary focus:shadow-[0_8px_30px_rgba(145,71,43,0.12)] focus:-translate-y-1 focus:outline-none transition-all duration-300"
                     placeholder="+54 9 11 1234-5678"
                   />
                   {errors.phone && <p className="text-red-700 text-sm">{errors.phone}</p>}
                 </div>
 
-                <div className="space-y-2 md:col-span-2">
+                <div className="space-y-2">
                   <label className="font-sans font-bold text-sm text-text-variant uppercase tracking-wider block">
                     Correo Electrónico
                   </label>
@@ -138,7 +138,7 @@ export default function InscripcionPage() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full bg-surface-low border border-outline-variant/30 rounded-xl px-4 py-3 font-sans text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-surface-low border border-surface-container/50 rounded-2xl px-5 py-4 font-sans text-text-primary placeholder:text-text-variant/50 hover:bg-surface-lowest focus:bg-background focus:border-primary focus:shadow-[0_8px_30px_rgba(145,71,43,0.12)] focus:-translate-y-1 focus:outline-none transition-all duration-300"
                     placeholder="tu-correo@ejemplo.com"
                   />
                   {errors.email && <p className="text-red-700 text-sm">{errors.email}</p>}
@@ -151,7 +151,7 @@ export default function InscripcionPage() {
                 Contacto de Emergencia
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="flex flex-col gap-6">
                 <div className="space-y-2">
                   <label className="font-sans font-bold text-sm text-text-variant uppercase tracking-wider block">
                     Nombre del Familiar
@@ -161,7 +161,7 @@ export default function InscripcionPage() {
                     name="emergencyName"
                     value={formData.emergencyName}
                     onChange={handleChange}
-                    className="w-full bg-surface-low border border-outline-variant/30 rounded-xl px-4 py-3 font-sans text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-surface-low border border-surface-container/50 rounded-2xl px-5 py-4 font-sans text-text-primary placeholder:text-text-variant/50 hover:bg-surface-lowest focus:bg-background focus:border-primary focus:shadow-[0_8px_30px_rgba(145,71,43,0.12)] focus:-translate-y-1 focus:outline-none transition-all duration-300"
                     placeholder="Nombre y parentesco"
                   />
                   {errors.emergencyName && <p className="text-red-700 text-sm">{errors.emergencyName}</p>}
@@ -176,7 +176,7 @@ export default function InscripcionPage() {
                     name="emergencyPhone"
                     value={formData.emergencyPhone}
                     onChange={handleChange}
-                    className="w-full bg-surface-low border border-outline-variant/30 rounded-xl px-4 py-3 font-sans text-text-primary focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                    className="w-full bg-surface-low border border-surface-container/50 rounded-2xl px-5 py-4 font-sans text-text-primary placeholder:text-text-variant/50 hover:bg-surface-lowest focus:bg-background focus:border-primary focus:shadow-[0_8px_30px_rgba(145,71,43,0.12)] focus:-translate-y-1 focus:outline-none transition-all duration-300"
                     placeholder="+54 9 11 1234-5678"
                   />
                   {errors.emergencyPhone && <p className="text-red-700 text-sm">{errors.emergencyPhone}</p>}

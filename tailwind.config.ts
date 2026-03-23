@@ -24,6 +24,7 @@ const config: Config = {
           DEFAULT: "#faf9f8",
           low: "#f4f3f2",
           container: "#eeeeed",
+          lowest: "#ffffff",
         },
         text: {
           primary: "#1a1c1c",
